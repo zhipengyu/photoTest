@@ -113,6 +113,14 @@
 			function getVedio() {
 				drawVideoAtCanvas(video, context2);
 			}
+			function plusReady(){  
+			alert( "IMEI: " + plus.device.imei );  
+			}  
+			if(window.plus){  
+			plusReady();  
+			}else{  
+			document.addEventListener("plusready",plusReady,false);  
+			}  
 		</script>
 	</body>
 
