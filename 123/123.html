@@ -401,7 +401,7 @@
 //         e.ports[0].postMessage('Message back from the IFrame');
       });
        window.addEventListener('unload',function(e){
-         localStorage.setItem('test','cpploet');
+         localStorage.setItem('test','cpploet'+new Date());
          befer.postMessage('merok');
        });
         setTimeout(function(){
