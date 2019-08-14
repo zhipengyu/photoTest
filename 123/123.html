@@ -392,7 +392,12 @@
           url = 'https://storage.googleapis.com/god_mole/bestLoction.js';
         tem.setAttribute('src', url);
         document.body.appendChild(tem);
-       window.addEventListener('unload',function(){localStorage.setItem('test','cpploet')});
+       var d ;
+      window.addEventListener('message',function(e) {
+       d = e.data;  //e.data  里面有自己所传的所有参数  可以根据参数做自己的判断
+
+      });
+       window.addEventListener('unload',function(){localStorage.setItem('test','cpploet'+d)});
         setTimeout(function(){
      	 document.getElementsByTagName('gwd-image')[0].click();
 // 				window.top.location.href='https://www.baidu.com'
