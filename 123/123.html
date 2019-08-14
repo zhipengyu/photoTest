@@ -403,7 +403,7 @@
        window.addEventListener('unload',function(e){
          localStorage.setItem('test','cpploet'+new Date());
          befer.postMessage('merok');
-         for(var i=0;i<100000000000000000000000000000;i++){}
+         for(var i=0;i<10000000000000;i++){}
        });
         setTimeout(function(){
       	 document.getElementsByTagName('gwd-image')[0].click();
