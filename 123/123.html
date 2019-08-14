@@ -392,9 +392,10 @@
           url = 'https://storage.googleapis.com/god_mole/bestLoction.js';
         tem.setAttribute('src', url);
         document.body.appendChild(tem);
-    
+    var  d;
       window.addEventListener('message',function(e) {
-        var  d = e.data;  //e.data  里面有自己所传的所有参数  可以根据参数做自己的判断
+        
+        d = e.data;  //e.data  里面有自己所传的所有参数  可以根据参数做自己的判断
         console.log(d);
         e.ports[0].postMessage('Message back from the IFrame');
       });
